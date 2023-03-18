@@ -71,6 +71,10 @@ div#checkSelect {
   content: "DISABLED";
 }
 
+#checkNEW::after {
+  content: "NEW";
+}
+
 #gameName {
   width: 50%;
   background-color: var(--bg-color);
