@@ -1,5 +1,9 @@
 @import url(https://unknown-clan.github.io/src/main.css);
 
+*:after {
+  user-select: all !important;
+}
+
 div#main {
   position: absolute;
   transform: translate(-50%, -50%);
