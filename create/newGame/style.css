@@ -1,0 +1,105 @@
+@import url(https://unknown-clan.github.io/src/main.css);
+
+div#main {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 75vw;
+  height: 75vh;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  margin: 3px;
+}
+
+div#checkSelect {
+  display: flex;
+  flex-direction: row;
+}
+.flipswitch {
+  position: relative;
+  background: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  font-size: 14px;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.flipswitch:after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+
+.flipswitch:after {
+  content: "OFF";
+  background-color: red;
+}
+
+.flipswitch:checked:after {
+  background-color: limegreen;
+}
+
+#checkPC::after {
+  content: "PC ONLY";
+}
+
+#checkBETA::after {
+  content: "BETA";
+}
+
+#checkDISABLED::after {
+  content: "DISABLED";
+}
+
+#gameName {
+  width: 50%;
+  background-color: var(--bg-color);
+  color: white;
+  font-size: 120%;
+  border: none;
+  height: 30px;
+}
+
+#gameDescription {
+  width: 50%;
+  background-color: var(--bg-color);
+  color: white;
+  font-size: 100%;
+  border: none;
+  height: 30px;
+}
+
+#gameHref {
+  width: 50%;
+  background-color: var(--bg-color);
+  color: white;
+  font-size: 120%;
+  border: none;
+}
+
+button#create {
+  width: 50%;
+  background-color: limegreen;
+  color: white;
+  font-size: 150%;
+}
