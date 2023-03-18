@@ -37,5 +37,5 @@ document.getElementById("create").addEventListener("click", () => {
       </div>
   </article>`;
 
-  alert(output);
+  prompt("Copy article", output);
 });
