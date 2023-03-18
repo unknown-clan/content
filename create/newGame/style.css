@@ -52,11 +52,11 @@ div#checkSelect {
 
 .flipswitch:after {
   content: "OFF";
-  background-color: red;
+  background-color: rgb(220, 20, 20);
 }
 
 .flipswitch:checked:after {
-  background-color: limegreen;
+  background-color: rgb(29, 165, 29);
 }
 
 #checkPC::after {
@@ -106,4 +106,8 @@ button#create {
   background-color: limegreen;
   color: white;
   font-size: 150%;
+}
+
+button#create:hover {
+  cursor: pointer;
 }
