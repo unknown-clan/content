@@ -229,4 +229,7 @@ p#outputBox {
   height: 200px;
   background-color: var(--bg-color);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

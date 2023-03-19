@@ -40,8 +40,7 @@ document.body.addEventListener("change", () => {
     NEWtag = "";
   }
 
-  const output = `
-  <article>
+  const output = `<article>
       ${NEWtag}
       <div class="text">
           <h3>${gameName}</h3>
@@ -56,3 +55,13 @@ document.body.addEventListener("change", () => {
   const textBox = document.getElementById("outputBox");
   textBox.innerText = output;
 });
+
+function copyText(containerid) {
+  var range = document.createRange();
+  range.selectNode(containerid); //changed here
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+  alert("Successfully copied!");
+}
