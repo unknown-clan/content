@@ -1,5 +1,8 @@
 @import url(https://unknown-clan.github.io/src/main.css);
 
+* {
+  user-select: text;
+}
 .header {
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
@@ -31,6 +34,7 @@
   transition: 0.5s;
   transition: 0.5s;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  user-select: none;
 }
 
 .header a:hover {
@@ -99,10 +103,6 @@
   .logo {
     font-size: 50%;
   }
-}
-
-* {
-  user-select: text !important;
 }
 
 div#main {
