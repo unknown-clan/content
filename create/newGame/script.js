@@ -1,17 +1,23 @@
-const gameName = document.getElementById("gameName").value;
-const gameDescription = document.getElementById("gameDescription").value;
-const gameHref = document.getElementById("gameHref").value;
+let PCtag = "";
+let BETAtag = "";
+let DISABLEDtag = "";
+let NEWtag = "";
 
-var checkboxPC = document.getElementById("checkPC");
-var checkboxBETA = document.getElementById("checkBETA");
-var checkboxDISABLED = document.getElementById("checkDISABLED");
-var checkboxNEW = document.getElementById("checkNEW");
+// document.getElementById("create").addEventListener("click", () => {
+document.body.addEventListener("change", () => {
+  const gameName = document.getElementById("gameName").value;
+  const gameDescription = document.getElementById("gameDescription").value;
+  const gameHref = document.getElementById("gameHref").value;
 
-document.getElementById("create").addEventListener("click", () => {
-  let PCtag = "";
-  let BETAtag = "";
-  let DISABLEDtag = "";
-  let NEWtag = "";
+  var checkboxPC = document.getElementById("checkPC");
+  var checkboxBETA = document.getElementById("checkBETA");
+  var checkboxDISABLED = document.getElementById("checkDISABLED");
+  var checkboxNEW = document.getElementById("checkNEW");
+
+  PCtag = "";
+  BETAtag = "";
+  DISABLEDtag = "";
+  NEWtag = "";
 
   if (checkboxPC.checked) {
     PCtag = "pc ";
@@ -41,9 +47,12 @@ document.getElementById("create").addEventListener("click", () => {
           <h3>${gameName}</h3>
 
           <p>${gameDescription}</p>
-          <a href="${gameHref}" class="btn pc beta"></a>
+          <a href="${gameHref}" class="${PCtag + BETAtag + DISABLEDtag}"></a>
       </div>
   </article>`;
 
-  prompt("Copy article", output);
+  // prompt("Copy article", output);
+
+  const textBox = document.getElementById("outputBox");
+  textBox.innerText = output;
 });
