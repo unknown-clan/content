@@ -46,7 +46,9 @@ document.body.addEventListener("change", () => {
           <h3>${gameName}</h3>
 
           <p>${gameDescription}</p>
-          <a href="${gameHref}" class="${PCtag + BETAtag + DISABLEDtag}"></a>
+          <a href="${gameHref}" class="btn ${
+    PCtag + BETAtag + DISABLEDtag
+  }"></a>
       </div>
   </article>`;
 
